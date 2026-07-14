@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirely - Post a New Job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);">
+
+    <header id="navbar">
+        <div class="logo-container">
+            <img src="./Image/Logo.jpeg" alt="Hirely Logo" width="40" height="40">
+            <h2 class="logo-text">Hirely</h2>
+        </div>
+        <div class="nav-links">
+            <a href="employerdashboard.html" class="nav-item">Dashboard</a>
+                <a href="support.html" class="nav-item">Support</a>
+            <a href="Login.html" class="nav-item">Logout</a>
+        </div>
+    </header>
+
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <h3 style="font-size: 1.1em;">Recruiter Tools</h3>
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                <a href="employerdashboard.html" class="nav-item">Dashboard</a>
+                <a href="postjobs.html" class="nav-item" style="color: var(--primary-color); font-weight: bold;">Post New Job</a>
+                <a href="myapplicants.html" class="nav-item">My Applicants</a>
+                <a href="companypro.html" class="nav-item">Company Profile</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="selection-card" style="max-width: 900px; margin: 0 auto; text-align: left; padding: 40px;">
+                <h2 style="margin-bottom: 10px;">Post a New Opportunity</h2>
+                <p style="color: #666; margin-bottom: 30px;">Fill out the details below to reach thousands of job seekers.</p>
+
+                <form action="#" class="login-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div>
+                            <label style="font-weight: 600; display: block; margin-bottom: 8px;">Job Title</label>
+                            <input type="text" placeholder="e.g. Frontend Developer" class="input-field" required>
+                        </div>
+                        <div>
+                            <label style="font-weight: 600; display: block; margin-bottom: 8px;">Location</label>
+                            <input type="text" placeholder="e.g. Cairo, Remote" class="input-field" required>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <label style="font-weight: 600; display: block; margin-bottom: 8px;">Job Type</label>
+                        <select class="input-field" style="width: 100%; height: 50px; background: white;">
+                            <option>Full-time</option>
+                            <option>Part-time</option>
+                            <option>Freelance</option>
+                            <option>Internship</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <label style="font-weight: 600; display: block; margin-bottom: 8px;">Salary Range (Optional)</label>
+                        <input type="text" placeholder="e.g. $500 - $800" class="input-field">
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <label style="font-weight: 600; display: block; margin-bottom: 8px;">Job Description</label>
+                        <textarea class="input-field" style="width: 100%; height: 150px; padding: 15px; font-family: inherit;" placeholder="Tell us about the role, requirements, and responsibilities..."></textarea>
+                    </div>
+
+                    <div style="display: flex; gap: 15px; margin-top: 30px;">
+                        <button type="submit" class="apply-btn" style="position: static; flex: 2;">Publish Job</button>
+                        <button type="button" class="apply-btn" style="position: static; flex: 1; background-color: #e0e0e0; color: #333;" onclick="window.location.href='employerdashboard.html'">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <p>© 2026 Hirely Recruiter Portal</p>
+        </div>
+    </footer>
+
+</body>
+</html>

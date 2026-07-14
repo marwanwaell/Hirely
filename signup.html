@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirely - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="logo-container">
+            <img src="./Image/Logo.jpeg" alt="Hirely Logo" width="40" height="40">
+            <h2 class="logo-text">Hirely</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="home-page.html" class="nav-item">Home</a>
+            <a href="Login.html" class="nav-item">Login</a>
+        </nav>
+    </header>
+
+    <main class="login-wrapper">
+        <div class="selection-card login-card">
+            <h2>Create Account</h2>
+            <p style="color: #666; margin-bottom: 20px;">
+                Sign up to start using Hirely and find your dream job.
+            </p>
+            
+            <form class="login-form" onsubmit="return validatePassword()">
+                <input type="text" placeholder="Full Name" class="input-field" required>
+                <input type="text" placeholder="Username" class="input-field" required>
+                <input type="email" placeholder="Email" class="input-field" required>
+            
+
+                <input type="password" id="password" placeholder="Password" class="input-field" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" class="input-field" required>
+
+                <button type="submit" class="apply-btn" style="width: 100%; margin-top: 10px;">
+                    Sign Up
+                </button>
+            </form>
+
+            <div class="separator">
+                <p>OR</p>
+            </div>
+
+            <button type="button" class="social-btn google">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="18" alt="Google Logo">
+                Continue with Google
+            </button>
+            
+            <button type="button" class="social-btn facebook">
+                Continue with Facebook
+            </button>
+
+            <p style="margin-top: 20px; font-size: 0.9em;">
+                Already have an account? 
+                <a href="Login.html" style="color: #2563eb; font-weight: bold; text-decoration: none;">
+                    Login
+                </a>
+            </p>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <h3>Contact Us</h3>
+            <p>Email: support@Hirely.com | Phone: +20 123 456 7890</p>
+            
+            <nav class="footer-links">
+                <a href="about-us.html">About</a>
+                <a href="legal.html">Privacy Policy</a>
+                <a href="legal.html">Terms</a>
+            </nav>
+
+            <p style="margin-top:15px; font-size: 0.8em; color: #888;">
+                © 2026 Hirely. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

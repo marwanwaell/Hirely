@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirely - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="logo-container">
+            <img src="./Image/Logo.jpeg" alt="Hirely Logo" width="40" height="40">
+            <h2 class="logo-text">Hirely</h2>
+        </div>
+        <div class="nav-links">
+            <a href="home-page.html" class="nav-item">Home</a>
+        
+            <a href="signup.html" class="nav-item">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="login-wrapper">
+        <div class="selection-card login-card">
+            <h2>Login</h2>
+            <p style="color: #666; margin-bottom: 20px;">Welcome back! Please enter your details.</p>
+
+            <form class="login-form">
+                <p style="text-align: left; font-weight: bold; margin-bottom: 10px;">I am a:</p>
+
+                <div class="role-selection">
+                    <div class="role-box active" id="seeker" onclick="selectRole('seeker')">
+                        <span class="role-icon">👤</span>
+                        <p>Job Seeker</p>
+                    </div>
+                    <div class="role-box" id="employer" onclick="selectRole('employer')">
+                        <span class="role-icon">💼</span>
+                        <p>Employer</p>
+                    </div>
+                </div>
+
+                <input type="text" placeholder="Username" class="input-field" required>
+
+                <div style="position: relative;">
+                    <input type="password" id="password" placeholder="Password" class="input-field" required>
+                    <span id="toggleText" onclick="togglePassword()" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); cursor: pointer; font-size: 14px; color: #2563eb;">
+                        Show
+                    </span>
+                </div>
+
+                <button type="button" onclick="handleLogin()" class="apply-btn" style="width: 100%; margin-top: 10px;">
+                    Login
+                </button>
+            </form>
+
+            <div class="separator">
+                <p>OR</p>
+            </div>
+
+            <button class="social-btn google">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="18" alt="Google">
+                Continue with Google
+            </button>
+
+            <button class="social-btn facebook">
+                Continue with Facebook
+            </button>
+
+            <p style="margin-top: 20px; font-size: 0.9em;">
+                Don't have an account? <a href="signup.html" style="color: #2563eb; font-weight: bold; text-decoration: none;">Sign up</a>
+            </p>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <h3>Contact Us</h3>
+            <p>Email: support@Hirely.com | Phone: +20 123 456 7890</p>
+            
+            <nav class="footer-links">
+                <a href="about-us.html">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+
+            <p style="margin-top:15px; font-size: 0.8em; color: #888;">
+                © 2026 Hirely. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

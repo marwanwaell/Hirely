@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirely - Find Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo-container">
+            <img src="./Image/Logo.jpeg" alt="Hirely Logo" width="40" height="40">
+            <h2 class="logo-text">Hirely</h2>
+        </div>
+        <div>
+      <div class="nav-links">
+            <a href="home-page.html" class="nav-item">Home</a>
+            <a href="jobs.html" class="nav-item" style="color: var(--primary-color); font-weight: bold;">Browse Jobs</a>
+            <a href="myapp.html" class="nav-item" >My Applications</a>
+            
+            <a href="my-profile.html" class="nav-item" >Profile settings</a>
+                <a href="support.html" class="nav-item">Support</a>
+            <a href="Login.html" class="nav-item">Logout</a>
+        </div>
+    </div>
+    </header>
+
+    <main style="text-align:center; padding: 40px 20px;">
+        <h1>Available Jobs</h1>
+        <p style="color: #666; margin-bottom: 30px;">Explore opportunities that match your expertise</p>
+        
+        <input type="text" style="width:70%; max-width: 600px; padding:12px; border-radius: 8px; border: 1px solid #ddd;" placeholder="Search by title, skill, or company...">
+
+        <div class="job-card" style="margin-top: 30px;">
+            <h2 class="job-title" style="text-align: left;">Frontend Developer</h2>
+            <p style="text-align: left; color: #555;">Tech Corp Inc.</p>
+            
+            <table class="job-details-table">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Salary Range</th>
+                        <th>Type</th>
+                        <th>Posted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Remote</td>
+                        <td>$60,000 - $80,000</td>
+                        <td>Full-time</td>
+                        <td>2 days ago</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tags" style="text-align: left; margin: 15px 0;">
+                <b class="tag-item">React</b>
+                <b class="tag-item">JavaScript</b>
+                <b class="tag-item">CSS3</b>
+            </div>
+            
+            <a href="#" class="apply-btn" onclick="showSaveMessage(event)">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+            <h2 class="job-title" style="text-align: left;">Junior Web Developer</h2>
+            <p style="text-align: left; color: #555;">StartupXYZ</p>
+            
+            <table class="job-details-table">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Salary Range</th>
+                        <th>Type</th>
+                        <th>Posted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>New York, NY</td>
+                        <td>$50,000 - $65,000</td>
+                        <td>Full-time</td>
+                        <td>1 week ago</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tags" style="text-align: left; margin: 15px 0;">
+                <b class="tag-item">HTML5</b>
+                <b class="tag-item">Tailwind</b>
+            </div>
+            
+            <a href="#" class="apply-btn" onclick="showSaveMessage(event)">Apply Now</a>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <h3>Contact Us</h3>
+            <p>Email: support@Hirely.com | Phone: +20 123 456 7890</p>
+            
+            <nav class="footer-links">
+                <a href="about-us.html">About</a>
+                <a href="legal.html">Privacy Policy</a>
+                <a href="legal.html">Terms</a>
+            </nav>
+
+            <p style="margin-top:15px; font-size: 0.8em; color: #888;">
+                © 2026 Hirely. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirely - My Applicants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo-container">
+            <img src="./Image/Logo.jpeg" alt="Hirely Logo" width="40" height="40">
+            <h2 class="logo-text">Hirely</h2>
+        </div>
+        <div class="nav-links">
+            <a href="employerdashboard.html" class="nav-item">Dashboard</a>
+                <a href="support.html" class="nav-item">Support</a>
+            <a href="Login.html" class="nav-item">Logout</a>
+        </div>
+    </header>
+
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <h3 style="font-size: 1.1em;">Recruiter Tools</h3>
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                <a href="employerdashboard.html" class="nav-item">Dashboard</a>
+                <a href="postjobs.html" class="nav-item">Post New Job</a>
+                <a href="myapplicants.html" class="nav-item" style="color: var(--primary-color); font-weight: bold;">My Applicants</a>
+                <a href="companypro.html" class="nav-item">Company Profile</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div style="margin-bottom: 30px;">
+                <h1>Manage Applicants</h1>
+                <p style="color: var(--text-muted);">Review and track candidates for all your active listings.</p>
+            </div>
+
+            <table class="job-table">
+                <thead>
+                    <tr>
+                        <th>Candidate Name</th>
+                        <th>Applied For</th>
+                        <th>Experience</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mutascu Ahmed</strong></td>
+                        <td>Frontend Developer</td>
+                        <td>2 Years</td>
+                        <td><span class="status-pill status-active">New</span></td>
+                        <td><a href="#" class="apply-btn" style="padding: 5px 15px; font-size: 0.8em;">Review</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sarah Johnson</strong></td>
+                        <td>UX Researcher</td>
+                        <td>5 Years</td>
+                        <td><span class="status-pill" style="background: #e2e8f0; color: #475569;">Interviewed</span></td>
+                        <td><a href="#" class="apply-btn" style="padding: 5px 15px; font-size: 0.8em;">Review</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Marwan Khaled</strong></td>
+                        <td>Backend Engineer</td>
+                        <td>3 Years</td>
+                        <td><span class="status-pill status-closed">Rejected</span></td>
+                        <td><a href="#" class="apply-btn" style="padding: 5px 15px; font-size: 0.8em;">Review</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <p>© 2026 Hirely Recruiter Portal</p>
+        </div>
+    </footer>
+</body>
+</html>

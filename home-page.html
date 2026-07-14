@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirely - Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Immediate Fix: Heading Styling for Selection Cards */
+        .selection-card h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #1a202c;
+        }
+
+        /* Ensuring hierarchy for benefits section */
+        .benefit-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        /* Visually hide headings needed for validation but not for design */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo-container">
+            <img src="./Image/Logo.jpeg" alt="Hirely Logo" width="40" height="40">
+            <h2 class="logo-text">Hirely</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="home-page.html" class="nav-item" style="color: var(--primary-color); font-weight: bold;">Home</a>
+            <a href="about-us.html" class="nav-item">About Us</a>
+            <a href="support.html" class="nav-item">Support</a>
+            <a href="Login.html" class="nav-item">Login</a>
+            <a href="signup.html" class="nav-item">Sign Up</a>
+        </nav>
+    </header>
+
+    <section id="hero-section">
+        <div class="hero-content">
+            <div class="cta-image-wrapper">
+                <img src="./Image/team.jpg" alt="Teamwork at Hirely" class="cta-image">
+            </div>
+            <h1>Welcome to Hirely</h1>
+            <p>Connect talented job seekers with great opportunities. Simple, fast, and effective.</p>
+            <div class="search-box-container">
+                <input type="text" placeholder="Search for jobs or developers..." id="hero-search">
+                <button type="button" class="apply-btn" style="position:static;">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="selection-container">
+        <div class="selection-card">
+            <img src="./Image/job.jpg" alt="Job Seeker Illustration" width="200">
+            <h2>I Want a Job</h2>
+            <p>Looking for your next opportunity? Create a profile and start applying.</p>
+            <a href="Login.html" class="apply-btn" style="position:static;">Get Started</a>
+        </div>
+
+        <div class="selection-card">
+            <img src="./Image/hire.jpg" alt="Employer Illustration" width="200">
+            <h2>I Want to Hire</h2>
+            <p>Need talented people for your team? Post job openings and find candidates.</p>
+            <a href="Login.html" class="apply-btn" style="position:static;">Get Started</a>
+        </div>
+    </main>
+
+    <section class="stats-container">
+        <h2 class="visually-hidden">Our Impact Statistics</h2>
+        <div class="stat-item">
+            <p class="stat-number" style="font-size: 2em; font-weight: bold;">150+</p>
+            <p class="stat-label">Active Jobs</p>
+        </div>
+        <div class="stat-item">
+            <p class="stat-number" style="font-size: 2em; font-weight: bold;">500+</p>
+            <p class="stat-label">Job Seekers</p>
+        </div>
+        <div class="stat-item">
+            <p class="stat-number" style="font-size: 2em; font-weight: bold;">85%</p>
+            <p class="stat-label">Match Rate</p>
+        </div>
+    </section>
+
+    <section style="text-align: center; padding: 40px 0;">
+        <h2 style="font-size: 2em; margin-bottom: 10px;">How It Works</h2>
+        <p style="color: #666;">Getting started with Hirely is easy! Follow these simple steps:</p>
+
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Create Your Profile</h3>
+                <p>Sign up as a job seeker or employer. Fill in your information, skills, and preferences.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Find Your Match</h3>
+                <p>Browse jobs or candidates. Our smart matching system shows you the best fits.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Connect & Succeed</h3>
+                <p>Apply to jobs or review applications. Get hired or find the perfect team member!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-container">
+        <div class="benefits-card">
+            <h2 style="text-align: center; margin-bottom: 40px;">Why Choose Hirely?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>Simple & Easy to Use</h3>
+                    <p>No complicated features. Just the essentials you need.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Smart Matching</h3>
+                    <p>Our system matches job seekers with opportunities based on actual skills.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Fast Results</h3>
+                    <p>Get responses quickly. No waiting weeks to hear back.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Perfect for Beginners</h3>
+                    <p>Whether you're new to job hunting or hiring, we make it straightforward.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" style="text-align: center;">
+        <h2>Join Thousands of Matches</h2>
+        <div class="cta-image-wrapper">
+            <img src="./Image/work.jpg" alt="Team working together" class="cta-image">
+        </div>
+        <p style="margin-top: 20px; font-weight: 600;">Start your journey today!</p>
+        <a href="signup.html" class="apply-btn" style="margin-top: 15px; padding: 15px 40px; position: static;">Get Started Now - It's Free!</a>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <h3>Contact Us</h3>
+            <p>Email: support@Hirely.com | Phone: +20 123 456 7890</p>
+            <nav class="footer-links">
+                <a href="about-us.html">About</a>
+                <a href="legal.html">Privacy Policy</a>
+                <a href="legal.html">Terms</a>
+            </nav>
+            <p style="margin-top:15px; font-size: 0.8em; color: #888;">© 2026 Hirely. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

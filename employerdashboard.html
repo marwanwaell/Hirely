@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirely - Employer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo-container">
+            <img src="./Image/Logo.jpeg" alt="Hirely Logo" width="40" height="40">
+            <h2 class="logo-text">Hirely</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="home-page.html" class="nav-item">Home</a>
+                <a href="support.html" class="nav-item">Support</a>
+
+            <a href="Login.html" class="nav-item">Logout</a>
+        </nav>
+    </header>
+
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <h3 style="font-size: 1.1em;">Recruiter Tools</h3>
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                <a href="employerdashboard.html" class="nav-item" style="color: var(--primary-color); font-weight: bold;">Dashboard</a>
+                <a href="postjobs.html" class="nav-item">Post New Job</a>
+                <a href="myapplicants.html" class="nav-item">My Applicants</a>
+                <a href="companypro.html" class="nav-item">Company Profile</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h1>Employer Dashboard</h1>
+                <button class="apply-btn" style="position: static;"> Create Job Post</button>
+            </div>
+
+            <h2 style="margin-bottom: 0.5px;">Active Job Postings</h2>
+            
+            <table class="job-details-table">
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Date Posted</th>
+                        <th>Applicants</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontend Developer</td>
+                        <td>Oct 12, 2026</td>
+                        <td><strong>45</strong></td>
+                        <td><span class="status-pill status-active">Active</span></td>
+                        <td><a href="#" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>Backend Engineer</td>
+                        <td>Oct 05, 2026</td>
+                        <td><strong>28</strong></td>
+                        <td><span class="status-pill status-active">Active</span></td>
+                        <td><a href="#" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>UX Researcher</td>
+                        <td>Sept 20, 2026</td>
+                        <td><strong>78</strong></td>
+                        <td><span class="status-pill" style="background: #fee2e2; color: #991b1b;">Closed</span></td>
+                        <td><a href="#" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <h3>Contact Us</h3>
+            <p>Email: support@Hirely.com | Phone: +20 123 456 7890</p>
+            
+            <nav class="footer-links">
+                <a href="about-us.html">About</a>
+                <a href="legal.html">Privacy Policy</a>
+                <a href="legal.html">Terms</a>
+            </nav>
+
+            <p style="margin-top:15px; font-size: 0.8em; color: #888;">
+                © 2026 Hirely. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

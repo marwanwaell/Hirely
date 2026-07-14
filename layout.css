@@ -1,0 +1,7 @@
+.job-details-table { width: 100%; border-collapse: collapse; margin: 15px 0; background: white; }
+.job-details-table th, .job-details-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+.job-details-table th { background-color: #2563eb; color: white; }
+.status-pill { padding: 5px 10px; border-radius: 15px; font-size: 12px; font-weight: bold; }
+.status-active { background: #e1f7e1; color: #2e7d32; }
+
+/* dont use this sheet i did it to try new stylings then add them to the main one!
